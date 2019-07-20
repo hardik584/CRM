@@ -1,0 +1,41 @@
+ 
+body
+{
+	margin: 0;
+	padding: 0;
+	
+	position: relative;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100vh;
+	background: linear-gradient(90deg,#3f51b5,#00bcd4);
+	animation: animate 20s linear infinite;
+
+}
+@keyframes animate
+{
+	0%
+	{
+		filter: hue-rotate(0deg);
+	}
+	50%
+	{
+		filter: hue-rotate(360deg);
+	}
+
+	100%
+	{
+		filter: hue-rotate(0deg);
+	}
+}
+body:after
+{
+	content: '';
+	position: absolute;
+	top:0;
+	right:0;
+	border-top: 100vh solid transparent;
+	border-right: 100vh solid #fff;
+	opacity: 0.1;
+}

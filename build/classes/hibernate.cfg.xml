@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-configuration PUBLIC "-//Hibernate/Hibernate Configuration DTD 3.0//EN" "http://hibernate.sourceforge.net/hibernate-configuration-3.0.dtd">
+<hibernate-configuration>
+  <session-factory>
+	 
+	<property name="hibernate.connection.driver_class"> com.mysql.jdbc.Driver</property>
+	
+	
+	<property name="hibernate.connection.url"> jdbc:mysql://localhost:3306/crm</property>
+	<property name="hibernate.connection.username">root</property>
+	<property name="connection.password">root123</property>
+	
+	<!-- <property name="hibernate.connection.url"> jdbc:mysql://crm-smcodetech.cblgadvbhngu.us-west-2.rds.amazonaws.com:3306/crm_master</property>
+	<property name="hibernate.connection.username">crmMstUsr</property>
+	<property name="connection.password">crm#p$$wd</property> -->
+     
+    <property name="connection.pool_size">11</property>
+    <property name="hibernate.dialect">org.hibernate.dialect.MySQLDialect </property>
+    <property name="show_sql">true</property>
+    <property name="connection.autoReconnect">true</property>
+    <property name="connection.autoReconnectForPools">true</property>
+    <property name="connection.is-connection-validation-required">true</property>
+    <property name="hbm2ddl.auto">update</property>
+    
+    
+    <!-- masterVos  -->
+    
+    <mapping class="com.vo.CustomerMasterVo"/>
+    <mapping class="com.vo.UserMasterVo"/>
+    <mapping class="com.vo.StateMasterVo"/>
+    <mapping class="com.vo.CityMasterVo"/>
+    <mapping class="com.vo.RoleMasterVo"/>
+    <mapping class="com.vo.CategoryMasterVo"/>
+    <mapping class="com.vo.ProductMasterVo"/>
+    <mapping class="com.vo.InquiryMasterVo"/>
+    <mapping class="com.vo.InquiryActivityMasterVo"/>
+    <mapping class="com.vo.TargetMasterVo"/>
+    <mapping class="com.vo.SupportActivityMasterVo"/>
+    <mapping class="com.vo.SupportMasterVo"/>
+    <mapping class="com.vo.ProfileMasterVo"/> 
+  	<mapping class="com.vo.QuotationMasterVo"/>
+     </session-factory>
+</hibernate-configuration>

@@ -371,11 +371,11 @@ public class InquiryMasterController extends HttpServlet {
 		int InqIdforPic=inquiryMasterVo.getInquiryId();
 		 
 		Part filePart;
-		String ACCESS_KEY = "AKIAIUGAR6FUJIWN6FSQ";
-	    String SECRET_KEY = "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";
+		String ACCESS_KEY = " ";
+	    String SECRET_KEY = " ";
 	    String END_POINT_URL = "http://s3.amazonaws.com";// e.g http://s3.amazonaws.com
 	    //String BUCKET = "elasticbeanstalk-ap-south-1-354994832949";
-	    String BUCKET ="elasticbeanstalk-us-west-2-336521938895";
+	    String BUCKET =" ";
 	    String IMAGE_LOCATION = "CRM/customerImage";
 	    //IMG_20151231_153325_1.jpg
 	    
